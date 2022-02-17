@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Routes, Route, Link} from "react-router-dom";
+import Layout from "./components/Layout";
+import MainScreen from "./components/MainScreen";
+import DeviceDetailsWindow from "./components/DeviceDetailsWindow";
+import Home from "./pages/Home";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+    return (
+        <Layout className="">
+
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/devices" element={<MainScreen/>} />
+                <Route path="/devices/:deviceId"
+                       element={
+                           <div>
+                               <MainScreen/>
+                               <DeviceDetailsWindow />
+
+                           </div>
+                      }
+                         />
+            </Routes>
+            </Layout>
+
+    );
 }
 
 export default App;

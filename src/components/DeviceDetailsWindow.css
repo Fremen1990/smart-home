@@ -1,0 +1,11 @@
+.handle{
+    cursor:pointer;
+}
+
+
+.nav-handle-move{
+    cursor:pointer;
+    height:40px;
+    width:100%;
+    background: linear-gradient(to right, rgba(88, 6, 178, 0.5), rgba(9, 91, 224, 0.5))
+}
