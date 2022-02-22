@@ -2,9 +2,13 @@ import React from 'react';
 
 import './layout.css'
 
- const  Layout =({children, className}) => {
+interface ChildrenEntity{
+    children:string| {} ;
+    className?:string;
+    header?:string
+}
 
-
+ const  Layout =({children, className}:ChildrenEntity)  => {
 
      return (
         <>
@@ -13,10 +17,6 @@ import './layout.css'
                 </div>
         </>
 
-
     )
 }
-
-
-
 export default Layout;

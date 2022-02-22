@@ -1,36 +1,38 @@
 {
   "smart-devices": [
     {
-      "id": 1,
-      "type": "Electric Smart Bulb",
-      "name": "Office Room",
-      "status": true,
-      "color": "green",
-      "powerTaken": 15,
+      "type": "bulb",
+      "id": "tsbb343btdb5345",
+      "name": "Electric Smart Bulb",
+      "place": "Office Room",
+      "connectionState": "connected",
+      "isTurnedOn": true,
+      "brightness": "82",
+      "color": "#b300ff",
+      "powerConsumption": 15,
       "description": "A smart bulb is an internet-capable LED light bulb that allows lighting to be customized, scheduled and controlled remotely. Smart bulbs are among the most immediately successful offerings in the growing category of home automation and Internet of Things (IoT) products.",
-      "imgOff":"../img/imgElectricSmartBulbOff",
-      "imgOn": "../img/Electric-bulb-off.png"
+      "icon": "💡"
     },
     {
-      "type": "Electric Smart Socket",
-      "name": "Office room",
-      "id": 2,
-      "status": false,
-      "powerTaken": 40,
+      "type": "outlet",
+      "id": "vtredtrvbet353",
+      "name": "Electric Smart Socket",
+      "place": "Office room",
+      "connectionState": "disconnected",
+      "isTurnedOn": false,
+      "powerConsumption": 120,
       "description": "A smart plug is a power receptacle that plugs into a traditional electrical outlet and integrates it into your smart home network, allowing you to control whatever you plug into it from an app on your smartphone or with your voice through a virtual assistant.",
-      "imgOff":"imgElectricSmartSocketOff",
-      "imgOn":"imgElectricSmartSocketOn"
+      "icon": "🔌"
     },
     {
-      "type": "Temperature sensor",
-      "name": "Bedroom",
-      "id": 3,
-      "status": true,
+      "type": "temperatureSensor",
+      "id": "fsdtrb3tet4",
+      "name": "Temperature Sensor",
+      "place": "Bedroom",
+      "connectionState": "poorConnection",
       "temperature": 19,
       "description": "The best HomeKit temperature sensors are an excellent — and convenient way to monitor your home's climate. With a HomeKit temperature sensor, you'll get reports on the current temperature of any given room (or from the great outdoors) on-demand, either through the Home app or Siri. ",
-      "imgOn":"imgTemperatureSensor"
+      "icon": "🌡"
     }
-
   ]
-
 }

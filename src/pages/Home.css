@@ -8,3 +8,26 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right, rgba(44, 0, 94, 0.5), rgba(0, 44, 112, 0.5))
 }
+
+
+
+
+@media (min-width: 768px){
+    .gradient-custom-panel{
+height:75vh;
+    }
+
+    .main-screen{
+        height:100%
+    }
+}
+
+.device-details-window{
+    height:100%;
+    max-height:100%;
+    width:100%;
+}
+
+.device-details-window-row{
+    height:100%;
+}

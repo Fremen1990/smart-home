@@ -9,3 +9,17 @@
     width:100%;
     background: linear-gradient(to right, rgba(88, 6, 178, 0.5), rgba(9, 91, 224, 0.5))
 }
+
+
+.iconn{
+    font-size:200px;
+
+}
+
+.card-device-details-line{
+    padding-bottom:1rem;
+}
+
+.device-details-window{
+    min-height:100%;
+}
