@@ -16,7 +16,6 @@ import {capitalizeFirstLetter} from "../utils/capitalize";
 import {connectionStatusIcons, OnOff} from "../utils/devicesFunctions"
 
 
-
 const MainScreen = () => {
 
     const [allDevices, setAllDevices] = useRecoilState(allDevicesStateAtom)
@@ -68,7 +67,7 @@ const MainScreen = () => {
                                         <div className="col-2 p-0 d-none d-md-block">On / Off</div>
                                     </div>
 
-                                    {allDevices.map((device:any, key) => {
+                                    {allDevices.map((device: any, key) => {
                                         return (
                                             <Link key={key} to={`/devices/${device.id}`}
                                                   style={{
